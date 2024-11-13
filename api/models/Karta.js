@@ -12,9 +12,5 @@ module.exports = {
     updatedAt: false,
     Stav: { type: "string", required: true },
     Datum: { type: "ref", columnType: "date", required: true },
-    Jmeno: { type: "string", required: true },
-    id: { type: "number", required: true },
-    Telefon: { type: "string" },
-    Heslo: { type: "string", required: true },
   },
 };

@@ -1,13 +1,15 @@
 /**
- * Pacient.js
+ * Titul.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
+
 module.exports = {
-  tableName: "Pacient",
+  tableName: "Titul",
   attributes: {
     createdAt: false,
     updatedAt: false,
+    Nazev: { type: "string", required: true },
   },
 };
