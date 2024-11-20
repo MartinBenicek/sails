@@ -12,5 +12,14 @@ module.exports = {
     updatedAt: false,
     Budova: { type: "string", required: true },
     Mistnost: { type: "string", required: true },
+    doktor: {
+      model: "doktor",
+      required: true,
+      columnName: "DoktorID",
+    },
+    lekarskeSluzby: {
+      collection: "lekarskesluzby",
+      via: "ordinace",
+    },
   },
 };

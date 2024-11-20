@@ -14,5 +14,15 @@ module.exports = {
     Vysetreni: { type: "string" },
     Ockovani: { type: "string" },
     Datum: { type: "ref", columnType: "date", required: true },
+    karta: {
+      model: "karta",
+      required: true,
+      columnName: "KartaID",
+    },
+    ordinace: {
+      model: "ordinace",
+      required: true,
+      columnName: "OrdinaceID",
+    },
   },
 };

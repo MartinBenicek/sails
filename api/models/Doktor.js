@@ -10,5 +10,17 @@ module.exports = {
   attributes: {
     createdAt: false,
     updatedAt: false,
+    UserRoleID: {
+      model: "UserRole",
+      unique: true,
+    },
+    TitulID: {
+      model: "Titul",
+      unique: true,
+    },
+    Odrinace: {
+      collection: "ordinace",
+      via: "doktor",
+    },
   },
 };

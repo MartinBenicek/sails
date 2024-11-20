@@ -16,5 +16,6 @@ module.exports = {
     Email: { type: "string", required: true, isEmail: true },
     Telefon: { type: "string" },
     Heslo: { type: "string", required: true },
+    userrole: { collection: "userrole", via: "UserID" },
   },
 };

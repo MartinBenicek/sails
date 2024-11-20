@@ -11,4 +11,8 @@ module.exports = {
     createdAt: false,
     updatedAt: false,
   },
+  UserRoleID: {
+    model: "UserRole",
+    unique: true,
+  },
 };

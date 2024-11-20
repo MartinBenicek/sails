@@ -11,6 +11,13 @@ module.exports = {
     createdAt: false,
     updatedAt: false,
     Stav: { type: "string", required: true },
-    Datum: { type: "ref", columnType: "date", required: true },
+    PacientID: {
+      model: "pacient",
+      unique: true,
+    },
+    lekarskeSluzby: {
+      collection: "lekarskesluzby",
+      via: "karta",
+    },
   },
 };

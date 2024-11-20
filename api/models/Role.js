@@ -11,5 +11,6 @@ module.exports = {
     createdAt: false,
     updatedAt: false,
     Nazev: { type: "string", required: true },
+    userrole: { collection: "userrole", via: "RoleID" },
   },
 };
